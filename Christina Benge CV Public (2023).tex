@@ -1,0 +1,53 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt, a4paper]{awesome-cv} % A4 paper size by default, use 'letterpaper' for US letter
+
+\geometry{left=2cm, top=1.5cm, right=2cm, bottom=2cm, footskip=.5cm} % Configure page margins with geometry
+
+\fontdir[fonts/]
+
+\colorlet{awesome}{libertyblue}
+\definecolor{darktext}{HTML}{555555}
+
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\name{Christina}{Benge}
+%\address{}
+%\mobile{}{libertyred}
+
+\email{christinabenge@live.com}{libertyred}
+\homepage{github.com/tbenge509}{libertyred}
+\github{tbenge509}{libertyred}
+
+\position{Graduate Student{\enskip\raisebox{0.2em}{\scalebox{1.7}{\raisebox{0.15em}{\rotatebox{-70}{\textcolor{libertyred}{\int}}}\kern-0.80em\rotatebox{-70}{\textcolor{libertyblue}{\int}}}}\enskip}\textcolor{black}{Returning to Workforce}}%
+
+
+\makecvfooter{\today}{Christina M. Benge~~~·~~~Curriculum Vitae}{\thepage} % Specify the letter footer with 3 arguments: (<left>, <center>, <right>), leave any of these blank if they are not needed
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvheader
+
+%----------------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%----------------------------------------------------------------------------------------
+
+\input{cv-sections/summary.tex}
+\input{cv-sections/education.tex}
+\input{cv-sections/skills.tex}
+\input{cv-sections/credentials.tex}
+\input{cv-sections/experience.tex}
+\input{cv-sections/experience_continued.tex}
+\input{cv-sections/honors.tex}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
